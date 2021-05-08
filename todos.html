@@ -30,15 +30,28 @@
       </div>
    
    <button onclick="hapus()" >hapus</button>
-   <button onclik="update()" >update</button> 
+    
       <ul id="myUL">
-        <li>Hit the gym</li>
-        <li>Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
+        <li>tes</li>
+        <li>tis</li>
+        <li>lanjutkan</li>
+        <li>tos</li>
+        <li>ping</li>
+        <li>rek</li>
       </ul>
+      <h2>Jadwal Harian</h2>
+      <form>
+          <label for="tanggal">Ganjil:</label>
+          <input name="tanggal" type="checkbox" value="ganjil">
+          <label for="tanggal">Genap:</label>
+          <input name="tanggal" type="checkbox" value="genap">
+      </form>
+      <button onclick="ambilInput()">check</button>
+      <div id="hasil"></div>
+  
+      <div class="hasil"></div>
+      <button onclick="update()">update</button>
+      <div class="hasil"></div>    
 
       <script>
           let belanja = []
@@ -103,6 +116,17 @@
       localStorage.removeItem("belanja")
       document.getElementById("myUL").innerHTML=""
     }
+
+    function update () {
+      const hasils = getElementsByClassName("hasil")
+      for (const hasil of hasils){
+                const header = document.createElement("h2")
+                header.innerText = "hello?"
+
+                hasil.appendChild(header)
+            }
+    }
+    
         </script>
 <div class="footer">
   <footer>
